@@ -29,6 +29,9 @@ io.on("connection",(socket)=>{
           console.log(userList)
 
    })
+   socket.emit('userList', (userList) =>{
+    console.log(userList)
+   })
      console.log(userList)
 
    socket.on('disconnect', ()=>{
